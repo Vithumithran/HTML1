@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#vimi{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg2.png);
+    background-size: cover;
+    background-position: center;
+position: relative;
+}
+.navibar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+.navibar .logo{
+    width: 70px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+.user{
+    display: flex;
+    left: 15px;
+    align-items: center;
+}
+button{
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86,86,86,0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.info{
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+}
+.info h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align:end;
+}
+.info p{
+    color: #f0eef1;
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 0;
+    line-height: 18px;
+}
+.info input{
+    text-align: center;
+    left: 30%;
+    width: 50%;
+    padding-right: 8px 10px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;  
+}
+::placeholder{
+    color: #ccc;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+}
+#prev,#next{
+    width: 20px;
+    cursor: pointer;
+}
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+.preview img{
+    width: 60px;
+    margin: 0 10px;
+    opacity: 0.4;
+}
+.preview .active{
+    display: block;
+    border: 3px solid #fff;
+    width: 100px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
