@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Scribblings</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="vimi">
+        <div class="navibar">
+            <img src="Wipro_logo.png" class="logo">
+            <div class="user">
+                <button><a href="explore.html">Explore</a></button>
+                <button><a href="resume.html">About</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <br><br><h1>SCRIBLLINGS</h1>
+                <p>Words from heart to refresh the soul.<br>
+				   Pen Name : ViMi(VithuMithra)</p> 
+				
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="slider">
+            <img src="left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="bg2.png" class="active thumbnail">
+                <img src="Quote1.webp" class="thumbnail">
+                <img src="Quote2.webp" class="thumbnail">
+                <img src="Quote3.webp" class="thumbnail">
+                <img src="Quote4.jpg" class="thumbnail">
+                <img src="Quote5.webp" class="thumbnail">
+            </div>
+            <img src="right-arrow.png" id="next">
+        </div>
+    </div>
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var vimi = document.getElementById("vimi");
+        var backgroundImg = new Array(
+            "bg2.png",
+            "Quote1.webp",
+            "Quote2.webp",
+            "Quote3.webp",
+            "Quote4.jpg",
+            "Quote5.webp",
+            
+            );
+
+        next.onclick = function(){
+            let i = 0;
+            if (i < 4 ){
+                vimi.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+                thumbnail[i++].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }          
+        }
+        prev.onclick = function(){
+            if (i > 0 ){
+                vimi.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                thumbnail[i++].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i--;
+            }          
+        }
+    </script>
+
+</body>
+</html>
